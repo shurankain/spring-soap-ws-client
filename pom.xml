@@ -78,7 +78,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <packageName>com.shurankain.spring.soap.ws.client.api.loanEligibility</packageName>
+                    <packageName>com.shurankain.spring.soap.ws.client.api.loaneligibility</packageName>
                     <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
                     <sources>
                         <source>${project.basedir}/src/main/resources/wsdl/</source>

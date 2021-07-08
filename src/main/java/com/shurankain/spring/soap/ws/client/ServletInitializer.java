@@ -1,4 +1,4 @@
-package com.shurankain.springsoapwsclient;
+package com.shurankain.spring.soap.ws.client;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(SpringSoapWsClientApplication.class);
+        return application.sources(SpringSoapWsClientApp.class);
     }
 
 }

@@ -1,13 +1,13 @@
-package com.shurankain.springsoapwsclient;
+package com.shurankain.spring.soap.ws.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringSoapWsClientApplication {
+public class SpringSoapWsClientApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringSoapWsClientApplication.class, args);
+        SpringApplication.run(SpringSoapWsClientApp.class, args);
     }
 
 }

@@ -1,10 +1,10 @@
-package com.shurankain.springsoapwsclient;
+package com.shurankain.spring.soap.ws.client;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringSoapWsClientApplicationTests {
+class SpringSoapWsClientAppTests {
 
     @Test
     void contextLoads() {

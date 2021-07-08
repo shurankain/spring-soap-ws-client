@@ -55,36 +55,50 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>jaxb2-maven-plugin</artifactId>-->
+<!--                <version>2.5.0</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>generate-resources</phase>-->
+<!--                        <id>xjc</id>-->
+<!--                        <goals>-->
+<!--                            <goal>xjc</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <packageName>com.shurankain.spring.soap.ws.client.api.loaneligibility</packageName>-->
+<!--                    <outputDirectory>${project.basedir}/src/main/java</outputDirectory>-->
+<!--                    <sources>-->
+<!--                        <source>${project.basedir}/src/main/resources/wsdl/</source>-->
+<!--                    </sources>-->
+<!--                    <sourceType>wsdl</sourceType>-->
+<!--                    <clearOutputDir>false</clearOutputDir>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+            <!-- tag::wsdl[] -->
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>jaxb2-maven-plugin</artifactId>
-                <version>2.5.0</version>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <version>0.14.0</version>
                 <executions>
                     <execution>
-                        <phase>generate-resources</phase>
-                        <id>xjc</id>
                         <goals>
-                            <goal>xjc</goal>
+                            <goal>generate</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
-                    <packageName>com.shurankain.spring.soap.ws.client.api.loaneligibility</packageName>
-                    <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-                    <sources>
-                        <source>${project.basedir}/src/main/resources/wsdl/</source>
-                    </sources>
-                    <sourceType>wsdl</sourceType>
-                    <clearOutputDir>false</clearOutputDir>
+                    <schemaLanguage>WSDL</schemaLanguage>
+                    <generatePackage>com.shurankain.spring.soap.ws.client.api.loaneligibility</generatePackage>
+                    <schemas>
+                        <schema>
+                            <url>http://localhost:9000/ws/loanEligibility.wsdl</url>
+                        </schema>
+                    </schemas>
                 </configuration>
             </plugin>
         </plugins>

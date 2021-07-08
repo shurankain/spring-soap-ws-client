@@ -70,6 +70,7 @@
                 <version>2.5.0</version>
                 <executions>
                     <execution>
+                        <phase>generate-resources</phase>
                         <id>xjc</id>
                         <goals>
                             <goal>xjc</goal>
@@ -77,8 +78,12 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <sources>${project.basedir}/src/main/resources/xsd/</sources>
+                    <packageName>com.shurankain.spring.soap.ws.client.api.loanEligibility</packageName>
                     <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+                    <sources>
+                        <source>${project.basedir}/src/main/resources/wsdl/</source>
+                    </sources>
+                    <sourceType>wsdl</sourceType>
                     <clearOutputDir>false</clearOutputDir>
                 </configuration>
             </plugin>

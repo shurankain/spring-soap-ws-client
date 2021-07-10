@@ -1,5 +1,8 @@
 <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-                  xmlns:sch="http://www.shurankain.com/spring/soap/ws/server/loaneligibility" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.shurankain.com/spring/soap/ws/server/loaneligibility" targetNamespace="http://www.shurankain.com/spring/soap/ws/server/loaneligibility">
+                  xmlns:sch="http://www.shurankain.com/spring/soap/ws/server/loaneligibility"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:tns="http://www.shurankain.com/spring/soap/ws/server/loaneligibility"
+                  targetNamespace="http://www.shurankain.com/spring/soap/ws/server/loaneligibility">
     <wsdl:types>
         <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
                     targetNamespace="http://www.shurankain.com/spring/soap/ws/server/loaneligibility">
@@ -26,11 +29,11 @@
         </xsd:schema>
     </wsdl:types>
     <wsdl:message name="CustomerRequest">
-        <wsdl:part element="sch:CustomerRequest" name="CustomerRequest"> </wsdl:part>
+        <wsdl:part element="sch:CustomerRequest" name="CustomerRequest"/>
     </wsdl:message>
     <wsdl:portType name="LoanEligibilityindicator">
         <wsdl:operation name="Customer">
-            <wsdl:input message="tns:CustomerRequest" name="CustomerRequest"> </wsdl:input>
+            <wsdl:input message="tns:CustomerRequest" name="CustomerRequest"/>
         </wsdl:operation>
     </wsdl:portType>
     <wsdl:binding name="LoanEligibilityindicatorSoap11" type="tns:LoanEligibilityindicator">

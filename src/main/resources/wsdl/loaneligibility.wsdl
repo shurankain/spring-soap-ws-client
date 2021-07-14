@@ -2,7 +2,7 @@
                   xmlns:tns="http://www.shurankain.com/spring/soap/ws/server/loaneligibility"
                   targetNamespace="http://www.shurankain.com/spring/soap/ws/server/loaneligibility">
     <wsdl:types>
-        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.shurankain.com/spring/soap/ws/server/loanEligibility">
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.shurankain.com/spring/soap/ws/server/loaneligibility">
             <xsd:element name="CustomerRequest">
                 <xsd:complexType>
                     <xsd:sequence>

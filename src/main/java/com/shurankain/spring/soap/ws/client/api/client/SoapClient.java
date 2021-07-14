@@ -1,12 +1,11 @@
 package com.shurankain.spring.soap.ws.client.api.client;
 
+import com.shurankain.spring.soap.ws.client.api.loaneligibility.Acknowledgement;
+import com.shurankain.spring.soap.ws.client.api.loaneligibility.CustomerRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.stereotype.Service;
 import org.springframework.ws.client.core.WebServiceTemplate;
-
-import com.shurankain.spring.soap.ws.client.api.loaneligibility.Acknowledgement;
-import com.shurankain.spring.soap.ws.client.api.loaneligibility.CustomerRequest;
 
 @Service
 public class SoapClient {

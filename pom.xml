@@ -61,7 +61,7 @@
                 <configuration>
                     <packageName>com.shurankain.spring.soap.ws.client.api.loaneligibility
                     </packageName>
-                    <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+                    <outputDirectory>${project.basedir}/target/generated-sources/xjc</outputDirectory>
                     <sources>
                         <source>${project.basedir}/src/main/resources/wsdl/</source>
                     </sources>
